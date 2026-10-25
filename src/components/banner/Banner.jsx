@@ -16,7 +16,7 @@ const Banner = () => {
             />
             <h1 className="text-3xl font-bold">Assemble Your Ultimate Cricket Team</h1>
             <p className="max-w-xl">
-                Build your dream team with your favorite players.
+                Build your dream team with your favorite players. You can find what you want.
             </p>
         </section>
     );
