@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BPL Dreame
 
-## Getting Started
+BPL Dreame is a modern web application built with Next.js and focused on creating a clean, responsive front-end experience for the BPL Dreame brand.
 
-First, run the development server:
+## About this project
+
+This repository is not a backend service or API project. It is a front-end project designed to serve as the foundation for a brand website, landing page, or web presence for BPL Dreame.
+
+At the moment, the app is set up as a starter Next.js project with a simple home page and a modern UI stack, making it easy to build and expand into a fully featured marketing site, product showcase, or business website.
+
+## What this repo is for
+
+The main purpose of this repo is to provide:
+
+- a modern user interface for BPL Dreame
+- a responsive web experience for desktop and mobile devices
+- a clean foundation for future pages, sections, and features
+- a fast React-based application using the Next.js framework
+
+## Tech stack
+
+- Next.js 16
+- React 19
+- Tailwind CSS
+- DaisyUI
+- ESLint
+
+## Project structure
+
+- `src/app/` – application pages and app layout
+- `public/` – static assets
+- `package.json` – project scripts and dependencies
+
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Current status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repo currently contains the initial project setup and a basic home page. It is ready to be expanded into a full BPL Dreame website or product experience.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is currently unlicensed unless otherwise specified.
