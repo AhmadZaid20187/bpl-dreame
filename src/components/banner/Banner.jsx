@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Banner = () => {
     return (
         <section
-            className="flex min-h-90 flex-col items-center justify-center gap-4 rounded-2xl bg-cover bg-center px-6 py-10 text-center"
+            className="flex min-h-90 flex-col items-center justify-center gap-4 rounded-2xl bg-cover bg-center px-6 py-10 text-center mt-7 shadow-sm"
             style={{ backgroundImage: "url('/assets/bg-shadow.png')" }}
         >
             <Image

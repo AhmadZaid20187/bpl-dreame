@@ -1,0 +1,112 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "image": "/images/players/shakib-al-hasan.png",
+    "type": "All-Rounder",
+    "rating": 9.5,
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Left-Arm Orthodox",
+    "country": "Bangladesh",
+    "price": 8500000
+  },
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "image": "/images/players/tamim-iqbal.png",
+    "type": "Batter",
+    "rating": 9.2,
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "None",
+    "country": "Bangladesh",
+    "price": 7500000
+  },
+  {
+    "id": 3,
+    "name": "Mustafizur Rahman",
+    "image": "/images/players/mustafizur-rahman.png",
+    "type": "Bowler",
+    "rating": 8.9,
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Left-Arm Fast-Medium",
+    "country": "Bangladesh",
+    "price": 7000000
+  },
+  {
+    "id": 4,
+    "name": "Litton Das",
+    "image": "/images/players/litton-das.png",
+    "type": "Wicket-Keeper",
+    "rating": 8.7,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "None",
+    "country": "Bangladesh",
+    "price": 6500000
+  },
+  {
+    "id": 5,
+    "name": "Taskin Ahmed",
+    "image": "/images/players/taskin-ahmed.png",
+    "type": "Bowler",
+    "rating": 8.5,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Fast",
+    "country": "Bangladesh",
+    "price": 6000000
+  },
+  {
+    "id": 6,
+    "name": "Mehidy Hasan Miraz",
+    "image": "/images/players/mehidy-hasan-miraz.png",
+    "type": "All-Rounder",
+    "rating": 8.4,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off-Break",
+    "country": "Bangladesh",
+    "price": 5500000
+  },
+  {
+    "id": 7,
+    "name": "Towhid Hridoy",
+    "image": "/images/players/towhid-hridoy.png",
+    "type": "Batter",
+    "rating": 8.2,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "None",
+    "country": "Bangladesh",
+    "price": 5000000
+  },
+  {
+    "id": 8,
+    "name": "Rashid Khan",
+    "image": "/images/players/rashid-khan.png",
+    "type": "Bowler",
+    "rating": 9.3,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Leg-Spin",
+    "country": "Afghanistan",
+    "price": 9000000
+  },
+  {
+    "id": 9,
+    "name": "Jos Buttler",
+    "image": "/images/players/jos-buttler.png",
+    "type": "Wicket-Keeper",
+    "rating": 9.4,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "None",
+    "country": "England",
+    "price": 9500000
+  },
+  {
+    "id": 10,
+    "name": "Andre Russell",
+    "image": "/images/players/andre-russell.png",
+    "type": "All-Rounder",
+    "rating": 9.1,
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Fast",
+    "country": "West Indies",
+    "price": 8800000
+  }
+]
