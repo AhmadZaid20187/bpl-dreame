@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 
 const fetchPlayers = async () => {
-  const res = await fetch("/data.json")
+  const res = await fetch("https://raw.githubusercontent.com/AhmadZaid20187/bpl-dreame/main/public/data.json")
   return res.json()
 }
 
