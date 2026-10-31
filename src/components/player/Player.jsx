@@ -23,6 +23,7 @@ const Player = ({ playerPromise }) => {
                     </div>
                 ))}
             </div> */}
+            <p>Players: {players.length}</p>
 
             <AvailablePlayers players={players} />
         </>
