@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 // import CoinImg from ''
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
     return (
         <div>
             <div className="navbar bg-base-100 p-3 rounded-2xl mt-5">
@@ -25,7 +25,7 @@ const Navbar = () => {
                             width={20}
                             height={20}
                         />
-                        0 Coins
+                        {coin} Coins
                     </p>
                 </div>
             </div>

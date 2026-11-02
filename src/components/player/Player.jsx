@@ -1,21 +1,50 @@
 "use client";
 
-import { CgProfile } from "react-icons/cg";
+import React, { use, useState } from 'react';
+import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from './SelectedPlayers/SelectedPlayers';
 
-import React, { use } from 'react';
-import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
-
-const Player = ({ playerPromise }) => {
+const Player = ({ playerPromise, setCoin, coin }) => {
     const players = use(playerPromise)
-    console.log(players)
+    // console.log(players)
+
+    const [selectedBtn, setSelectedBtn] = useState("available")
+    console.log(selectedBtn, "setlected type");
 
     return (
-        <>
+        <div className="mt-15">
 
-            <p>Players: {players.length}</p>
+            {/* <p>Players: {players.length}</p> */}
 
-            <AvailablePlayers players={players} />
-        </>
+            <div className="flex justify-between">
+                {
+                    selectedBtn === "available" ?
+                        <h2 className="text-xl font-bold">Available Players</h2>
+                        :
+                        <h2 className="text-xl font-bold">Selected Players(2/10)</h2>
+
+                }
+                <div>
+                    <button
+                        onClick={() => setSelectedBtn("available")}
+                        className={`btn
+                             ${selectedBtn === "available" ? "bg-[#E7FE29]" : "btn-soft"} text-black rounded-r-none rounded-l-xl`}
+                    >Available</button>
+
+                    <button
+                        onClick={() => setSelectedBtn("selected")}
+                        className={`btn
+                             ${selectedBtn === "selected" ? "bg-[#E7FE29]" : "btn-soft"} text-black rounded-l-none rounded-r-xl`}
+                    >Selected</button>
+                </div>
+            </div>
+
+            {selectedBtn === "available" ?
+                <AvailablePlayers players={players} setCoin={setCoin} coin={coin} />
+                :
+                <SelectedPlayers />
+            }
+        </div>
 
     );
 };
