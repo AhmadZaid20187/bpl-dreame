@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CgProfile } from 'react-icons/cg';
 import { FaFlag } from "react-icons/fa";
 
-const AvailablePlayers = ({ players, setCoin, coin }) => {
+const AvailablePlayers = ({ players, setCoin, coin, selectedPlayers, setSelectedPlayers }) => {
     // console.log(players)
 
     return (
@@ -12,7 +12,15 @@ const AvailablePlayers = ({ players, setCoin, coin }) => {
             {/* Third */}
             <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
                 {players.map((player) => (
-                    <Cards key={player.id} player={player} setCoin={setCoin} coin={coin} />
+                    <Cards
+                        key={player.id}
+                        player={player}
+                        setCoin={setCoin}
+                        coin={coin}
+                        setSelectedPlayers={setSelectedPlayers}
+                        selectedPlayers={selectedPlayers}
+
+                    />
                 ))}
             </div>
         </div>

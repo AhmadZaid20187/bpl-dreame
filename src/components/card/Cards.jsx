@@ -1,14 +1,31 @@
+"use client"
+import { Aladin } from 'next/font/google';
 import React, { useState } from 'react';
 import { CgProfile } from 'react-icons/cg';
 import { FaFlag } from 'react-icons/fa';
 
-const Cards = ({ player, setCoin, coin }) => {
+const Cards = ({ player, setCoin, coin, selectedPlayers, setSelectedPlayers }) => {
     console.log(player.price);
     const [isSelected, setSelected] = useState(false);
 
     const handlePlayer = () => {
+
+        let newCoin = coin - player.price
+        if (newCoin >= 0) {
+            setCoin(coin - player.price)
+
+        } else {
+            alert("You do not have enough money");
+            return;
+        }
+
+        alert(`${player.name} is selected`)
+
         setSelected(true);
-        setCoin(coin - player.price)
+
+        setSelectedPlayers([...selectedPlayers, player])
+
+
     }
     return (
         <div

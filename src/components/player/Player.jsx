@@ -9,7 +9,8 @@ const Player = ({ playerPromise, setCoin, coin }) => {
     // console.log(players)
 
     const [selectedBtn, setSelectedBtn] = useState("available")
-    console.log(selectedBtn, "setlected type");
+    const [selectedPlayers, setSelectedPlayers] = useState([])
+    // console.log(selectedBtn, "setlected type");
 
     return (
         <div className="mt-15">
@@ -21,7 +22,7 @@ const Player = ({ playerPromise, setCoin, coin }) => {
                     selectedBtn === "available" ?
                         <h2 className="text-xl font-bold">Available Players</h2>
                         :
-                        <h2 className="text-xl font-bold">Selected Players(2/10)</h2>
+                        <h2 className="text-xl font-bold">Selected Players({selectedPlayers.length}/{players.length})</h2>
 
                 }
                 <div>
@@ -35,14 +36,21 @@ const Player = ({ playerPromise, setCoin, coin }) => {
                         onClick={() => setSelectedBtn("selected")}
                         className={`btn
                              ${selectedBtn === "selected" ? "bg-[#E7FE29]" : "btn-soft"} text-black rounded-l-none rounded-r-xl`}
-                    >Selected</button>
+                    >Selected({selectedPlayers.length})</button>
                 </div>
             </div>
 
             {selectedBtn === "available" ?
-                <AvailablePlayers players={players} setCoin={setCoin} coin={coin} />
+                <AvailablePlayers
+                    players={players}
+                    setCoin={setCoin}
+                    coin={coin}
+
+                    selectedPlayers={selectedPlayers}
+                    setSelectedPlayers={setSelectedPlayers}
+                />
                 :
-                <SelectedPlayers />
+                <SelectedPlayers selectedPlayers={selectedPlayers} />
             }
         </div>
 

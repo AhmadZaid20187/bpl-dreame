@@ -16,7 +16,7 @@ export default function Home() {
   const playerPromise = fetchPlayers();
 
   // Coin
-  const [coin, setCoin] = useState(5000000)
+  const [coin, setCoin] = useState(50000)
 
   return (
     <div className="container mx-auto">
