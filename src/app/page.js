@@ -4,6 +4,7 @@ import Banner from "@/components/banner/Banner";
 import Navbar from "@/components/navbar/Navbar";
 import Player from "@/components/player/Player";
 import { Suspense, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 
 const fetchPlayers = async () => {
@@ -27,6 +28,7 @@ export default function Home() {
         <Player playerPromise={playerPromise} setCoin={setCoin} coin={coin} />
       </Suspense>
 
+      <ToastContainer />
     </div>
   );
 }

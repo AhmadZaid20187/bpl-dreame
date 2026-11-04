@@ -1,4 +1,4 @@
-import Cards from '@/components/card/Cards';
+import Cards from '@/components/ui/Cards';
 import React, { useState } from 'react';
 import { CgProfile } from 'react-icons/cg';
 import { FaFlag } from "react-icons/fa";

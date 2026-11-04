@@ -3,6 +3,7 @@ import { Aladin } from 'next/font/google';
 import React, { useState } from 'react';
 import { CgProfile } from 'react-icons/cg';
 import { FaFlag } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Cards = ({ player, setCoin, coin, selectedPlayers, setSelectedPlayers }) => {
     console.log(player.price);
@@ -15,11 +16,13 @@ const Cards = ({ player, setCoin, coin, selectedPlayers, setSelectedPlayers }) =
             setCoin(coin - player.price)
 
         } else {
-            alert("You do not have enough money");
+            toast.error("You do not have enough money")
             return;
         }
 
-        alert(`${player.name} is selected`)
+        toast.success(`${player.name} is selected`, {
+            position: "bottom-center"
+        })
 
         setSelected(true);
 
