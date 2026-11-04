@@ -13,7 +13,7 @@ const Player = ({ playerPromise, setCoin, coin }) => {
     // console.log(selectedBtn, "setlected type");
 
     return (
-        <div className="mt-15">
+        <div className="my-15">
 
             {/* <p>Players: {players.length}</p> */}
 
